@@ -1,6 +1,6 @@
 # :world_map: COOL PLACE - backend
 
-## :checkered_flag: Getting Start
+## :checkered_flag: Installation
 
 ```bash
 $ pip install -r requirements.txt
@@ -10,7 +10,6 @@ $ pip install -r requirements.txt
 # 로컬 서버 실행
 $ python manage.py runserver --settings=cool_place.local
 ```
-
 
 
 
