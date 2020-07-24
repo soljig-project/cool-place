@@ -4,4 +4,4 @@ const instance = setInterceptors();
 
 export function fetchInfo() {
   return instance.get('')
-};
+}
