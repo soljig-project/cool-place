@@ -9,7 +9,7 @@
     <!-- Footer -->
     <Footer></Footer>
     <transition name="fade">
-      <div class="scorllTopBtn" v-if="fab" @click="goTop">
+      <div class="scorll-top-button" v-if="fab" @click="goTop">
         <i class="fas fa-arrow-up"></i>
       </div>
     </transition>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.scorllTopBtn {
+.scorll-top-button {
   position: fixed;
   right: 20px;
   bottom: 14px;
@@ -58,7 +58,7 @@ export default {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-.scorllTopBtn:hover {
+.scorll-top-button:hover {
   cursor: pointer;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
