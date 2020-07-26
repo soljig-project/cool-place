@@ -17,10 +17,10 @@ $ python manage.py runserver --settings=cool_place.local
 
 1. New Connection 생성
 
-   ![mysql](C:\Users\박홍비\Desktop\mysql.PNG)
+   <img width="516" alt="mysql" src="https://user-images.githubusercontent.com/52685261/88482646-9b449680-cf9d-11ea-981e-41d97900741b.PNG">
 
 2. New Schema 생성
 
-   ![mysql2](C:\Users\박홍비\Desktop\mysql2.PNG)
+   <img width="658" alt="mysql2" src="https://user-images.githubusercontent.com/52685261/88482643-9a136980-cf9d-11ea-9b5a-c37eadabcaef.PNG">
 
    테이블은 나중에 모델링 하고 생성할 예정!
