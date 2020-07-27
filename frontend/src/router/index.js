@@ -10,8 +10,15 @@ export default new Router({
   routes: [
     {
       path: '',
-      name: 'Main',
-      component: loadComponent('Main', 'Main'),
+      name: 'MainPage',
+      component: loadView('MainPage'),
+    },
+    {
+      path: '/map',
+      component: loadView('MapPage'),
+      children: [
+        { path: '', name: 'CoolPlaceMap', component: loadComponent('Map', 'Map') }
+      ]
     },
     {
       path: '*',

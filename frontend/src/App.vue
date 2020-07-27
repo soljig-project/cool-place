@@ -1,31 +1,25 @@
 <template>
-  <div id="app">
-    <!-- Header -->
-    <Header></Header>
-    <!-- Main Contents -->
-    <section>
+  <v-app>
+    <Header v-if="this.$route.path !== '/'"></Header>
+    <section :class="this.$route.path === '/' ? '' : 'header-area'">
       <router-view id="page-view" />
     </section>
-    <!-- Footer -->
-    <Footer></Footer>
     <transition name="fade">
       <div class="scorll-top-button" v-if="fab" @click="goTop">
         <i class="fas fa-arrow-up"></i>
       </div>
     </transition>
-  </div>
+  </v-app>
 </template>
 
 <script>
 import Header from '@/components/Common/Header.vue';
-import Footer from '@/components/Common/Footer.vue';
 import '@/assets/css/default.css';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
   },
   data() {
     return {
@@ -47,6 +41,10 @@ export default {
 </script>
 
 <style scoped>
+.header-area {
+  margin-top: 56px;
+}
+
 .scorll-top-button {
   position: fixed;
   right: 20px;
